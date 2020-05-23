@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="C++" targetName="C++" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +11,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="" />
+    <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/C++.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/C++.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +26,17 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bluCpKyJX7CB5DaYZJNUHMS61b" />
   <component name="ProjectViewState">
@@ -26,9 +46,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="C++" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="C++" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="C++">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,10 +70,29 @@
       <option name="presentableId" value="Default" />
       <updated>1589218877823</updated>
       <workItem from="1589218884048" duration="80000" />
+      <workItem from="1590227350891" duration="411000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom" timestamp="1590227762331">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
+    <state width="1358" height="198" key="GridCell.Tab.0.center" timestamp="1590227762331">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
+    <state width="1358" height="198" key="GridCell.Tab.0.left" timestamp="1590227762330">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1590227762330" />
+    <state width="1358" height="198" key="GridCell.Tab.0.right" timestamp="1590227762331">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
   </component>
 </project>
