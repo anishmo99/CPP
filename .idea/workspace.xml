@@ -12,12 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/C++.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/C++.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +47,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="C++" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="C++" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="C++">
@@ -71,6 +68,7 @@
       <updated>1589218877823</updated>
       <workItem from="1589218884048" duration="80000" />
       <workItem from="1590227350891" duration="411000" />
+      <workItem from="1590242559119" duration="496000" />
     </task>
     <servers />
   </component>
@@ -94,5 +92,9 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
+    <state x="251" y="72" key="SettingsEditor" timestamp="1590243041775">
+      <screen x="0" y="23" width="1440" height="815" />
+    </state>
+    <state x="251" y="72" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1590243041775" />
   </component>
 </project>
