@@ -12,8 +12,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/C++.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/C++.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkBalancedTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/continguousSubArrayOfEqualNumberOf0&amp;1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countLeavesInBinaryTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diameterOfBinaryTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mirrorTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodesNotHavingSiblings.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sumOfLeafNodes.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/C++" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C++" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C++.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C++.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lengthOfLongestSubtring.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lengthOfLongestSubtringWithoutRepeatingCharacters.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexicographicRankInString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lexicographicRankInString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +50,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bluCpKyJX7CB5DaYZJNUHMS61b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -47,7 +66,14 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="echo hi" />
+      <command value="ls" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="C++" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="C++" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="C++">
@@ -69,32 +95,64 @@
       <workItem from="1589218884048" duration="80000" />
       <workItem from="1590227350891" duration="411000" />
       <workItem from="1590242559119" duration="496000" />
+      <workItem from="1590403038586" duration="18000" />
+      <workItem from="1590404031558" duration="369000" />
+      <workItem from="1590478688555" duration="22064000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="198" key="GridCell.Tab.0.bottom" timestamp="1590227762331">
+    <state x="384" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590478836809">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
-    <state width="1358" height="198" key="GridCell.Tab.0.center" timestamp="1590227762331">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="384" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.813@0.23.1440.813" timestamp="1590478836809" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1590575690690">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
-    <state width="1358" height="198" key="GridCell.Tab.0.left" timestamp="1590227762330">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590575690690" />
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1590480502363" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1590575690689">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1590227762330" />
-    <state width="1358" height="198" key="GridCell.Tab.0.right" timestamp="1590227762331">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590575690689" />
+    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1590575690689">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1590227762331" />
-    <state x="251" y="72" key="SettingsEditor" timestamp="1590243041775">
-      <screen x="0" y="23" width="1440" height="815" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590575690689" />
+    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1590575690690">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590575690690" />
+    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
+    <state x="251" y="54" key="SettingsEditor" timestamp="1590601815027">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="251" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590601815027" />
+    <state x="251" y="72" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1590490136643" />
     <state x="251" y="72" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1590243041775" />
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590517666056">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590517666056" />
+    <state x="428" y="167" width="584" height="532" key="find.popup" timestamp="1590479409304">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="428" y="167" width="584" height="532" key="find.popup/0.23.1440.813@0.23.1440.813" timestamp="1590479409304" />
+    <state x="385" y="197" width="670" height="675" key="run.anything.popup" timestamp="1590478992896">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="385" y="197" width="670" height="675" key="run.anything.popup/0.23.1440.813@0.23.1440.813" timestamp="1590478992896" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1590518502323">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1590518502323" />
   </component>
 </project>
