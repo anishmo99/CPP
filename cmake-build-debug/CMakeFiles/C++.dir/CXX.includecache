@@ -7,24 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/anishmookherjee/Anish/C++/C++/test.cpp
-iostream
+stdio.h
 -
-string
--
-cstring
--
-vector
--
-cstdio
--
-algorithm
--
-utility
--
-map
--
-set
--
-queue
+stdlib.h
 -
 

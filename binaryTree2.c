@@ -2,13 +2,6 @@
 //  binaryTree2.c
 //  AnishC++
 //
-
-
-
-
-
-
-
 //  Created by Anish Mookherjee on 04/11/19.
 //  Copyright © 2019 Anish Mookherjee. All rights reserved.
 //

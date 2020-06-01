@@ -12,23 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/checkBalancedTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/continguousSubArrayOfEqualNumberOf0&amp;1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/countLeavesInBinaryTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diameterOfBinaryTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mirrorTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodesNotHavingSiblings.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sumOfLeafNodes.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clang++" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinChangeUniqueWaysDP.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editDistance.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invertTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numberOfCoins.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaryTree2.c" beforeDir="false" afterPath="$PROJECT_DIR$/binaryTree2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/C++" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C++" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C++.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C++.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lengthOfLongestSubtring.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lengthOfLongestSubtringWithoutRepeatingCharacters.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexicographicRankInString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lexicographicRankInString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mergeIntervals.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mergeIntervals.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlappingIntervals.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/overlappingIntervals.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CMake" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -98,6 +97,11 @@
       <workItem from="1590403038586" duration="18000" />
       <workItem from="1590404031558" duration="369000" />
       <workItem from="1590478688555" duration="22064000" />
+      <workItem from="1590814461616" duration="739000" />
+      <workItem from="1590815729690" duration="3366000" />
+      <workItem from="1590842882863" duration="1096000" />
+      <workItem from="1591030038773" duration="15000" />
+      <workItem from="1591030073085" duration="505000" />
     </task>
     <servers />
   </component>
@@ -112,31 +116,35 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="384" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.813@0.23.1440.813" timestamp="1590478836809" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1590575690690">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="156" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1590830209226">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="156" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1440.813@0.23.1440.813" timestamp="1590830209226" />
+    <state width="1398" height="663" key="GridCell.Tab.0.bottom" timestamp="1591030358855">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590575690690" />
-    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1590480502363" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1590575690689">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="663" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1591030358855" />
+    <state width="1398" height="663" key="GridCell.Tab.0.center" timestamp="1591030358852">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590575690689" />
-    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1590575690689">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="663" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1591030358852" />
+    <state width="1398" height="663" key="GridCell.Tab.0.left" timestamp="1591030358851">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590575690689" />
-    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1590575690690">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="663" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1591030358851" />
+    <state width="1398" height="663" key="GridCell.Tab.0.right" timestamp="1591030358854">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590575690690" />
-    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1590480502362" />
-    <state x="251" y="54" key="SettingsEditor" timestamp="1590601815027">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="663" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1591030358854" />
+    <state x="251" y="72" key="SettingsEditor" timestamp="1590842964708">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="251" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590601815027" />
-    <state x="251" y="72" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1590490136643" />
+    <state x="251" y="72" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1590842964708" />
     <state x="251" y="72" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1590243041775" />
     <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590517666056">
       <screen x="0" y="0" width="1440" height="900" />
