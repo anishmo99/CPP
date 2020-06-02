@@ -12,27 +12,30 @@ using namespace std;
 
 typedef long long ll;
 
-int longestDistinct(string s)
+#define EB emplace_back
+#define PB push_back
+#define F first
+#define S second
+
+
+int numberOfCoins(vector<int> coins,int amount,int n)
 {
-    set<char>hash_set;
-    int i=0,j=0;
-    int count=0;
-    while(j<s.length())
+    int dp[amount][n];
+
+    for(int i=0;i<n;i++)
+        dp[0][i]=1;
+
+    for(int i=1;i<n;i++)
     {
-        if(hash_set.find(s.at(j))==hash_set.end())
+        for(int j=0;j<=amount;j++)
         {
-            hash_set.insert(s.at(j));
-            j++;
-            count=max(count,j-i);
-        }
-        else
-        {
-            hash_set.erase(s.at(i));
-            i++;
+            if(i==0)
+
         }
     }
-    return count;
+
 }
+
 
 int main()
 {
@@ -48,9 +51,15 @@ int main()
     int cases;
     cin >> cases;
     while(cases--){
-        string s;
-        cin >> s;
-        cout << longestDistinct(s);
+        int amount;
+        cin>>amount;
+        int n;
+        cin>>n;
+        vector<int> coins(n);
+        for(int i=0;i<n;i++)
+            cin>>v[i];
+        cout<<numberOfCoins(coins,amount,n);
+        cout<<endl;
     }
     return 0;
 }

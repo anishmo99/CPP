@@ -1,52 +1,65 @@
 #include <iostream>
-#include <map>
+#include <string>
+#include <cstring>
+#include <vector>
+#include <cstdio>
 #include <algorithm>
+#include <utility>
+#include <map>
+#include <set>
+#include <queue>
+using namespace std;
 
-using namespace  std;
+typedef long long ll;
 
-inline int fact(int n){
-    return n<=1?1:n*fact(n-1);
-}
+#define EB emplace_back
+#define PB push_back
+#define F first
+#define S second
 
-inline int smaller(string str){
-    int count=0;
-    char c=str[0];
-    for(int i=1;i<str.length();i++)
-        if(str[i]<c)
-            count++;
-    return count;
-}
 
-int wordRank(string s){
-    int len=s.length();
-    map<char,int>m;
+int numberOfCoins(vector<int> coins,int amount,int n)
+{
+    int dp[amount][n];
 
-    for(char c:s)
-        m[c]++;
+    for(int i=0;i<n;i++)
+        dp[0][i]=1;
 
-    for(auto x:m)
-        if(x.second>1)
-            return 0;
+    for(int i=1;i<n;i++)
+    {
+        for(int j=0;j<=amount;j++)
+        {
+            if(i==0)
 
-    int factorial=fact(len);
-
-    int rank=1;
-
-    for(int i=0;i<len;i++){
-        factorial/=len-i;
-
-        rank+=smaller(s.substr(i,n-i))*factorial;
+        }
     }
 
-    return rank%1000003;
 }
 
-int main(){
+
+int main()
+{
+#ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+#endif
+
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     int cases;
-    cin>>cases;
+    cin >> cases;
     while(cases--){
-        string s;
-        cin>>s;
-        cout<<wordRank(s)<<endl;
+        int amount;
+        cin>>amount;
+        int n;
+        cin>>n;
+        vector<int> coins(n);
+        for(int i=0;i<n;i++)
+            cin>>v[i];
+        cout<<numberOfCoins(coins,amount,n);
+        cout<<endl;
     }
+    return 0;
 }
