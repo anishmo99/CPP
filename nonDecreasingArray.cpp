@@ -13,4 +13,3 @@ public:
                 nums[p - 2] <= nums[p] || nums[p - 1] <= nums[p + 1]); // normal case range [p-2 --> p+1] all valid
     }
 };
-
