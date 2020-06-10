@@ -6,9 +6,11 @@ struct Node
 {
     int data;
     Node *left, *right;
-};*/
+};
+
 // function should return the sum of all the
 // leaf nodes of the binary tree
+
 int sumLeaf(Node* root)
 {
     if(root==NULL)
