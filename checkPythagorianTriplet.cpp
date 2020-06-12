@@ -12,7 +12,7 @@ bool isPythTrip(int arr[],int n)
     for(int i=n-1;i>=0;i--)
     {
         int l=0;
-        int r=n-1;
+        int r=n-2;
         while(l<r)
         {
             if(arr[l]+arr[r]==arr[i])
@@ -27,19 +27,19 @@ bool isPythTrip(int arr[],int n)
 }
 
 int main() {
-	int cases;
-	cin>>cases;
-	while(cases--)
-	{
-	    int n;
-	    cin>>n;
-	    int arr[n];
-	    for(int i{};i<n;i++)
-	        cin>>arr[i];
-	    if(isPythTrip(arr,n))
-	        cout<<"Yes"<<endl;
-	    else 
-	        cout<<"No"<<endl;
-	}
-	return 0;
+    int cases;
+    cin>>cases;
+    while(cases--)
+    {
+        int n;
+        cin>>n;
+        int arr[n];
+        for(int i{};i<n;i++)
+            cin>>arr[i];
+        if(isPythTrip(arr,n))
+            cout<<"Yes"<<endl;
+        else 
+            cout<<"No"<<endl;
+    }
+    return 0;
 }
