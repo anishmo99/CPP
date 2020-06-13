@@ -12,7 +12,7 @@ bool isPythTrip(int arr[],int n)
     for(int i=n-1;i>=0;i--)
     {
         int l=0;
-        int r=n-2;
+        int r=i-1;
         while(l<r)
         {
             if(arr[l]+arr[r]==arr[i])
