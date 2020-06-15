@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> largestDivisibleSubset(vector<int>& nums) {
         sort(nums.begin(),nums.end());
-        vector<int> dp(nums.size()+1,1);
+        vector<int> dp(nums.size(),1);
         vector<int> sol;
         
         if(nums.empty())
