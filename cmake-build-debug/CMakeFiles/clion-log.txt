@@ -10,6 +10,8 @@ Call Stack (most recent call first):
   CMakeLists.txt:2 (project)
 
 
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
 CMake Error at CMakeLists.txt:2 (project):
   The CMAKE_C_COMPILER:
 
@@ -36,6 +38,7 @@ CMake Error at CMakeLists.txt:2 (project):
 
 -- Configuring incomplete, errors occurred!
 See also "/Users/anishmookherjee/Anish/C++/C++/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/anishmookherjee/Anish/C++/C++/cmake-build-debug/CMakeFiles/CMakeError.log".
 Cannot read /Users/anishmookherjee/Anish/C++/C++/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake
 Cannot read /Users/anishmookherjee/Anish/C++/C++/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake
 
