@@ -34,3 +34,4 @@ input.txt
 output.txt
 test
 test.cpp
+.vscode/c_cpp_properties.json
