@@ -35,3 +35,8 @@ output.txt
 test
 test.cpp
 .vscode/c_cpp_properties.json
+cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/tmp/Icon
+cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/Icon
+cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/tmp/Icon
+cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/Icon
+Icon
