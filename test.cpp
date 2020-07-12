@@ -38,6 +38,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
+    cout<<"HI"<<endl;
     
     return 0;
 }

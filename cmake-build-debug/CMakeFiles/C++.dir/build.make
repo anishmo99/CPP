@@ -60,15 +60,15 @@ include CMakeFiles/C++.dir/flags.make
 CMakeFiles/C++.dir/test.cpp.o: CMakeFiles/C++.dir/flags.make
 CMakeFiles/C++.dir/test.cpp.o: ../test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anishmookherjee/Anish/C++/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C++.dir/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/C++.dir/test.cpp.o -c /Users/anishmookherjee/Anish/C++/C++/test.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/C++.dir/test.cpp.o -c /Users/anishmookherjee/Anish/C++/C++/test.cpp
 
 CMakeFiles/C++.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C++.dir/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anishmookherjee/Anish/C++/C++/test.cpp > CMakeFiles/C++.dir/test.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anishmookherjee/Anish/C++/C++/test.cpp > CMakeFiles/C++.dir/test.cpp.i
 
 CMakeFiles/C++.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C++.dir/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anishmookherjee/Anish/C++/C++/test.cpp -o CMakeFiles/C++.dir/test.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anishmookherjee/Anish/C++/C++/test.cpp -o CMakeFiles/C++.dir/test.cpp.s
 
 # Object files for target C++
 C_______OBJECTS = \
