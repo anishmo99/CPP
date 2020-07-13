@@ -52,7 +52,7 @@ int main()
     }
 }
 
-// OR
+// OR directly using hash_map size
 
 int longestSubstringWithKDistinctCharacters(string str, int k)
 {
