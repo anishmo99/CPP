@@ -60,3 +60,66 @@ public:
         }
     }
 };
+
+// GFG
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void subset(vector<int> &arr, vector<vector<int>> &res, vector<int> &r, int start)
+{
+    res.push_back(r);
+    for (int i = start; i < arr.size(); i++)
+    {
+        r.push_back(arr[i]);
+        subset(arr, res, r, i + 1);
+        r.pop_back();
+    }
+}
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        vector<int> arr;
+        int i;
+        for (i = 0; i < n; i++)
+        {
+            int c;
+            cin >> c;
+            arr.push_back(c);
+        }
+        vector<vector<int>> res;
+        vector<int> r;
+
+        sort(arr.begin(), arr.end());
+
+        subset(arr, res, r, 0);
+
+        set<vector<int>> ss;
+        for (i = 0; i < res.size(); i++)
+        {
+            ss.insert(res[i]);
+        }
+
+        for (auto it = ss.begin(); it != ss.end(); it++)
+        {
+            vector<int> ans = (*it);
+            int j = 0;
+            cout << "(";
+            for (j = 0; j < ans.size(); j++)
+            {
+                if (j == ans.size() - 1)
+                    cout << ans[j];
+                else
+                    cout << ans[j] << " ";
+            }
+            cout << ")";
+        }
+        cout << endl;
+    }
+    return 0;
+}
