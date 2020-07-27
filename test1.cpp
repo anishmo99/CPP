@@ -1,22 +1,47 @@
-int isPowerOfTwo(int n) {
-        if(n==1)
-        return 1;
-        if(n<=0)    return false;
-        while(n%2==0)
-        {
-            n/=2;
-        }
-        if(n==1)
-            return 1;
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int strStr(string haystack, string needle) {
+    int i = 0,j = 0;
+    bool flag = false;
+    int pos = 0;
+    if(haystack.length() == 0 and needle.length() == 0)
         return 0;
-    }
-
-
-int* isPower(int n,int *arr, int* result_count)
-{
-    for(int i=0;i<n;i++)
+    if(haystack.length() == 0 and needle.length() > 0)
+        return -1;
+    if(haystack.length() > 0 and needle.length() == 0)
+        return 0;
+    if(haystack == needle)
+        return 0;
+    
+    while(j < haystack.length())
     {
-        result.count[i]=isPowerOfTwo(arr[i]);
+        if(i == needle.length())
+            return pos;
+        if(haystack.at(j) == needle.at(i))
+        {
+            if(!flag)
+            {
+                flag = true;
+                pos = j;
+            }
+            i++;
+            // cout << haystack.at(j);
+        }
+        else
+        {
+            i = 0;
+        }
+        j++;
     }
-    return *result_count;
+    return pos ? pos : -1;
+}
+
+
+int main(){
+    string haystack, needle;
+    cin >> haystack >> needle;
+    cout << strStr(haystack, needle);
 }
