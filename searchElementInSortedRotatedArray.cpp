@@ -38,7 +38,7 @@ int pivotBS(int arr[],int n,int key)
        
     if(arr[0] <= key)
         return binarySearch(arr,0,pivot-1,key);
-	 return binarySearch(arr,pivot+1,n-1,key);
+	return binarySearch(arr,pivot+1,n-1,key);
 }
 
 int main()
