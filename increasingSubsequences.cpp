@@ -5,7 +5,7 @@ class Solution {
 public:
     vector<vector<int>> findSubsequences(vector<int>& nums) {
         vector<int> subseq;
-        unordered_set<vector<int>> res;
+        set<vector<int>> res;
         
         dfs(nums, subseq, res, 0);
         
