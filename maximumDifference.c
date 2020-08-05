@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+// kadane's algorithm
+// maxDiff = max(maxDiff, arr[i] - minTillNow)
+// minTillNow = min(minTillNow, arr[i]);
 int maxDiff(int arr[], int n)
 {
     int max_diff = arr[1] - arr[0];
