@@ -52,3 +52,4 @@ test (1)
 *.xml
 .DS_Store
 test1.cpp
+*.txt
