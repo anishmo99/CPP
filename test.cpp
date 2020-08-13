@@ -26,7 +26,6 @@ typedef long long ll;
 
 
 
-
 int main()
 {
 #ifndef ONLINE_JUDGE
