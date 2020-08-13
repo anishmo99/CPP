@@ -53,3 +53,4 @@ test (1)
 .DS_Store
 test1.cpp
 *.txt
+*.json
