@@ -53,10 +53,13 @@ bool checkArrayHill(int arr[], int n)
     {
         if(arr[i] < arr[i + 1] and constant == false and decreasing == false)
             increasing = true;
+        
         else if(arr[i] == arr[i + 1] and decreasing == false)
             constant = true;
+        
         else if(arr[i] > arr[i + 1] and constant == true)
             decreasing = true;
+        
         else 
             return false;
     }
