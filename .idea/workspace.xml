@@ -12,8 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a00cc8c0-d1ed-4e7d-8848-0b18a859503b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/longestSubarrayWithSumDivisibleByK.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consecutiveArrayElement.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minimumDistanceBetweenTwoNumbers.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rottingOranges.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +96,7 @@
       <workItem from="1592547091661" duration="39000" />
       <workItem from="1592825845850" duration="37000" />
       <workItem from="1594548694801" duration="1318000" />
+      <workItem from="1600410584719" duration="96000" />
     </task>
     <servers />
   </component>
@@ -117,10 +119,6 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="577" y="207" key="EnvironmentVariablesDialog/0.23.1440.813@0.23.1440.813" timestamp="1594549256219" />
-    <state x="156" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1590830209226">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="156" y="23" key="FileDocumentManager.FileCacheConflict/0.23.1440.813@0.23.1440.813" timestamp="1590830209226" />
     <state width="1398" height="126" key="GridCell.Tab.0.bottom" timestamp="1594550071130">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -144,24 +142,10 @@
     <state x="221" y="114" key="SettingsEditor" timestamp="1594549267091">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="251" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590601815027" />
     <state x="221" y="114" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1594549267091" />
-    <state x="251" y="72" key="SettingsEditor/0.23.1440.815@0.23.1440.815" timestamp="1590243041775" />
-    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590517666056">
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600410601681">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590517666056" />
-    <state x="428" y="167" width="584" height="532" key="find.popup" timestamp="1590479409304">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="428" y="167" width="584" height="532" key="find.popup/0.23.1440.813@0.23.1440.813" timestamp="1590479409304" />
-    <state x="385" y="197" width="670" height="675" key="run.anything.popup" timestamp="1590478992896">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state x="385" y="197" width="670" height="675" key="run.anything.popup/0.23.1440.813@0.23.1440.813" timestamp="1590478992896" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1590518502323">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1590518502323" />
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600410601681" />
   </component>
 </project>
