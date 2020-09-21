@@ -1,33 +1,17 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main()
+class Solution
 {
-    int cases;
-    cin >> cases;
-
-    while (cases--)
+public:
+    vector<int> valueEqualToIndex(int arr[], int n)
     {
-        int n;
-        cin >> n;
+        vector<int> ans;
 
-        vector<int> arr(n);
-        for (int i = 0; i < n; i++)
-            cin >> arr[i];
-
-        bool flag = false;
         for (int i = 0; i < n; i++)
         {
             if (arr[i] == (i + 1))
             {
-                cout << i + 1 << " ";
-                flag = true;
+                ans.push_back(i + 1);
             }
         }
-        if (!flag)
-            cout << "Not Found";
-        cout << endl;
+        return ans;
     }
-    return 0;
-}
+};
