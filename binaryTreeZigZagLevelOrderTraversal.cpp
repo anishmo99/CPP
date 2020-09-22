@@ -1,5 +1,3 @@
-// leetcode
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -11,46 +9,46 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution
-{
+class Solution {
 public:
-    vector<vector<int>> zigzagLevelOrder(TreeNode *root)
-    {
-        vector<vector<int>> result;
-        if (root == nullptr)
-            return result;
-        stack<TreeNode *> s1;
-        stack<TreeNode *> s2;
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>> sol;
+        if(!root)
+            return sol;
+        
+        stack<TreeNode*> s1, s2;
         s1.push(root);
-        while (!s1.empty() or !s2.empty())
-        {
+        
+        while(!s1.empty() or !s2.empty()){
             vector<int> cur_level;
-            while (!s1.empty())
-            {
-                root = s1.top();
+            
+            while(!s1.empty()){
+                root = s1.top(); 
                 s1.pop();
                 cur_level.push_back(root->val);
-                if (root->left)
+                if(root->left)
                     s2.push(root->left);
-                if (root->right)
+                if(root->right)
                     s2.push(root->right);
             }
-            if (!cur_level.empty())
-                result.emplace_back(cur_level);
+            
+            if(!cur_level.empty())
+                sol.emplace_back(cur_level);
             cur_level.clear();
-            while (!s2.empty())
-            {
-                root = s2.top();
+            
+            while(!s2.empty()){
+                root = s2.top(); 
                 s2.pop();
                 cur_level.push_back(root->val);
-                if (root->right)
+                if(root->right)
                     s1.push(root->right);
-                if (root->left)
+                if(root->left)
                     s1.push(root->left);
             }
-            if (!cur_level.empty())
-                result.emplace_back(cur_level);
+            if(!cur_level.empty())
+                sol.emplace_back(cur_level);
         }
-        return result;
+        
+        return sol;
     }
 };
