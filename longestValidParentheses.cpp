@@ -19,7 +19,6 @@ public:
                         dp[i] = dp[i - 1] + 2 + ((i - dp[i - 1] - 2) >= 0 ? dp[i - dp[i - 1] - 2] : 0);
                     }
                 }
-                // cout<<dp[i]<<" ";
             }
         }
         return *max_element(dp.begin(), dp.end());
