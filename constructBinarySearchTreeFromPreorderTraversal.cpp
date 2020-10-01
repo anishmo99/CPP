@@ -9,27 +9,37 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    TreeNode* bst(TreeNode* &root,int data)
+    TreeNode *bstFromPreorder(vector<int> &preorder)
     {
-        if(root==NULL)
-        {
-            root=new TreeNode();
-            root->val=data;
-            return root;
-        }
-        if(data<root->val)
-            bst(root->left,data);
-        else
-            bst(root->right,data);
+        TreeNode *root = nullptr;
+
+        for (int data : preorder)
+            bst(root, data);
+
         return root;
     }
-    TreeNode* bstFromPreorder(vector<int>& preorder) {
-        TreeNode *root=NULL;
-        for(int& data:preorder)
-            bst(root,data);
-            
+
+    TreeNode *bst(TreeNode *&root, int data)
+    {
+        if (root == nullptr)
+        {
+            root = new TreeNode(data);
+            return root;
+        }
+
+        if (data < root->val)
+        {
+            bst(root->left, data);
+        }
+
+        else
+        {
+            bst(root->right, data);
+        }
+
         return root;
     }
 };
