@@ -1,42 +1,42 @@
 #include <iostream>
-#include <stack> 
-using namespace std; 
+#include <stack>
+using namespace std;
 
 void printNGE(long long int arr[], int n)
-{ 
-    stack <long long int> s; 
+{
+    stack<long long int> s;
     long long int storeNGE[n];
-    for(int i=n-1;i>=0;i--)
+    for (int i = n - 1; i >= 0; i--)
     {
-        while(!s.empty()&&s.top()<=arr[i])
+        while (!s.empty() && s.top() <= arr[i])
             s.pop();
-        
-        if(s.empty())
-            storeNGE[i]=-1;
+
+        if (s.empty())
+            storeNGE[i] = -1;
         else
-            storeNGE[i]=s.top();
+            storeNGE[i] = s.top();
         s.push(arr[i]);
     }
-    for(int i=0;i<n;i++)
-        cout<<storeNGE[i]<<" ";
+    for (int i = 0; i < n; i++)
+        cout << storeNGE[i] << " ";
 }
 
-int main() 
-{ 
+int main()
+{
     int cases;
-    cin>>cases;
-    while(cases--){
+    cin >> cases;
+    while (cases--)
+    {
         int n;
-        cin>>n;
+        cin >> n;
         long long int arr[n];
-        for(int i=0;i<n;i++)
-            cin>>arr[i];
-         printNGE(arr,n); 
-         cout<<endl;
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
+        printNGE(arr, n);
+        cout << endl;
     }
     return 0;
 }
-
 
 //inorder but not accepted by gfg compiler, seg fault
 /*
