@@ -25,7 +25,7 @@ void Max :: set_value()
 void Max :: find_max()
 {
     max = a[0];
-    for(int i=0; i<number; i++)
+    for(int i=1; i<number; i++)
         if(a[i]>max)
             max = a[i];
 }
