@@ -1,5 +1,6 @@
 #include<cstring>
 #include<iostream>
+
 using namespace std;
 class surname
 {
@@ -47,4 +48,5 @@ int main()
         f[i].get_data();
     for(int j=0; j<n; j++)
         f[j].display_data();
+    return 0;
 }
