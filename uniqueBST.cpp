@@ -1,18 +1,24 @@
-// catalan number concept
-
-class Solution {
+class Solution
+{
 public:
-    int numTrees(int n) {
-        int catalan[n+1];
-        memset(catalan,0,sizeof(catalan));
-        catalan[0]=catalan[1]=1;
-        for(int i=2;i<=n;i++)
+    int numTrees(int n)
+    {
+        vector<int> dp(n + 1, 0);
+
+        dp[0] = dp[1] = 1;
+
+        // loop for number of keys (ith loop)
+        for (int i = 2; i <= n; i++)
         {
-            for(int j=0;j<i;j++)
+            // loop for number of combinations (jth loop)
+            for (int j = 0; j < i; j++)
             {
-                catalan[i]+=catalan[j]*catalan[i-j-1];
+                // [number of keys to the left * number of keys to the right
+                dp[i] += dp[j] * dp[i - j - 1];
             }
         }
-        return catalan[n];
+
+        return dp[n];
     }
 };
+// catalan number concept
