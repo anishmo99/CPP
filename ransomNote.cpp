@@ -1,7 +1,3 @@
-#include <iostream>
-#include <cstring>
-using namespace std;
-
 bool canConstruct(string s2, string s1) {
     int count[26]={0};
     for(int i=0;i<s1.length();i++)
@@ -17,13 +13,30 @@ bool canConstruct(string s2, string s1) {
     return true;
 }
 
-int main()
+class Solution
 {
-    string s1,s2;
-    //can s2 be constructed from s1;
-    cin>>s1>>s2;
-    if(canConstruct(s2,s1))
-        cout<<"true"<<endl;
-    else    cout<<"false"<<endl;
-    return 0;
-}
+public:
+    bool canConstruct(string ransomNote, string magazine)
+    {
+        map<char, int> rans, mag;
+
+        for (char c : magazine)
+            mag[c]++;
+
+        for (char c : ransomNote)
+        {
+            if (mag.find(c) != mag.end())
+            {
+                mag[c]--;
+
+                if (mag[c] == 0)
+                    mag.erase(c);
+            }
+
+            else
+                return false;
+        }
+
+        return true;
+    }
+};

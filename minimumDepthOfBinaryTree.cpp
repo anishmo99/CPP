@@ -9,25 +9,27 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-
-class Solution {
+class Solution
+{
 public:
-    int depth;
-    
-    int diameterOfBinaryTree(TreeNode* root) {
-        depth = 0;
-        
-        rec(root);
-        
-        return depth;
+    int depth = 0;
+
+    int dfs(TreeNode *root, int depth)
+    {
+        if (!root)
+            return depth;
+        if (root and !root->left and !root->right)
+            return depth + 1;
+
+        return min(dfs(root->left, depth + 1), dfs(root->right, depth + 1));
     }
-    
-    int rec(TreeNode* root){
-         if(root == nullptr)
+
+    int minDepth(TreeNode *root)
+    {
+
+        if (!root)
             return 0;
-        int l = rec(root->left);
-        int r = rec(root->right);
-        depth = max(depth, l + r);
-        return max(l,r) + 1;
+
+        return dfs(root, 0);
     }
 };

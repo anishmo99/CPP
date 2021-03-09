@@ -1,44 +1,25 @@
-//gfg solution
-#include <iostream>
-#include <vector>
-#include <cstring>
-using namespace std;
-
-int longSubWR(char str[])
+class Solution
 {
-    int len=strlen(str);
-    vector<int>visited(256,-1);
-    visited[str[0]]=0;
-    
-    int cur_len=1,max_len=1,prev_index;
-    for(int i=1;i<len;i++)
+public:
+    int lengthOfLongestSubstring(string s)
     {
-        prev_index=visited[str[i]];
-        if(prev_index==-1||i-cur_len>prev_index)
-            cur_len++;
-        else
+        int max_length = 0;
+        unordered_set<char> hash;
+        int i = 0, j = 0;
+        while (j < s.length())
         {
-            if(cur_len>max_len)
-                max_len=cur_len;
-            
-            cur_len=i-prev_index;
+            if (hash.find(s[j]) == hash.end())
+            {
+                hash.insert(s[j]);
+                max_length = max(max_length, j - i + 1);
+                j++;
+            }
+            else
+            {
+                hash.erase(s[i]);
+                i++;
+            }
         }
-        visited[str[i]]=i;
+        return max_length;
     }
-    if(cur_len>max_len)
-        max_len=cur_len;
-        
-    return max_len;
-}
-
-int main() {
-    int cases;
-    cin>>cases;
-    while(cases--)
-    {
-        char str[50];
-        cin>>str;
-        cout<<longSubWR(str)<<endl;
-    }
-    return 0;
-}
+};
