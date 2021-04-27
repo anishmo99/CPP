@@ -1,3 +1,37 @@
+// memoization
+
+class Solution
+{
+  public:
+    vector<vector<long long int>> dp;
+    long long int fun(int arr[], int n, int coin){
+        if(coin == 0)
+            return 1;
+            
+        if(n == 0)
+            return 0;
+            
+        if(dp[n][coin] != -1)
+            return dp[n][coin];
+            
+        if(arr[n - 1] <= coin){
+            return dp[n][coin] = fun(arr, n, coin - arr[n - 1]) + fun(arr, n - 1, coin);
+        }
+        
+        else
+            return dp[n][coin] = fun(arr, n - 1, coin);
+    }
+    long long int count( int arr[], int n, int sum)
+    {
+        dp.clear();
+        dp.resize(n + 1, vector<long long int> (sum + 1, -1));
+        
+        return fun(arr, n, sum);
+    }
+};
+
+// TOP DOWN
+
 #include <cstring>
 #include <iostream>
 using namespace std;

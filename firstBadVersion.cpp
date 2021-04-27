@@ -16,3 +16,17 @@ public:
         return low;
     }
 };
+
+// or
+
+class Solution {
+public:
+    int firstBadVersion(int n) {
+        while(n >= 1){
+            if(!isBadVersion(n))
+                return ++n;
+            n--;
+        }
+        return 1;
+    }
+};

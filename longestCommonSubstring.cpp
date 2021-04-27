@@ -1,48 +1,28 @@
-//
-//  longestCommonSubstring.cpp
-//  C++
-//
-//  Created by Anish Mookherjee on 20/03/20.
-//  Copyright © 2020 Anish Mookherjee. All rights reserved.
-//
-
-#include<iostream>
-#include<string.h>
-using namespace std;
-  
-int LCSubStr(string X, string Y, int m, int n)
+class Solution
 {
-    int LCSuff[m+1][n+1];
-    int result = 0;
-    for (int i=0; i<=m; i++)
+public:
+    int findLength(vector<int> &nums1, vector<int> &nums2)
     {
-        for (int j=0; j<=n; j++)
+        vector<vector<int>> dp(nums1.size() + 1, vector<int>(nums2.size() + 1, -1));
+        int ans = 0;
+        for (int i = 0; i < nums1.size() + 1; i++)
         {
-            if (i == 0 || j == 0)
-                LCSuff[i][j] = 0;
-  
-            else if (X[i-1] == Y[j-1])
+            for (int j = 0; j < nums2.size() + 1; j++)
             {
-                LCSuff[i][j] = LCSuff[i-1][j-1] + 1;
-                result = max(result, LCSuff[i][j]);
+                if (i == 0 or j == 0)
+                {
+                    dp[i][j] = 0;
+                    continue;
+                }
+                if (nums1[i - 1] == nums2[j - 1])
+                {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                    ans = max(dp[i][j], ans);
+                }
+                else
+                    dp[i][j] = 0;
             }
-            else LCSuff[i][j] = 0;
         }
+        return ans;
     }
-    return result;
-}
-
-int main()
-{
-    int c;
-    cin>>c;
-    while(c--)
-    {
-        string X,Y;
-        int n,m;
-        cin>>m>>n;
-        cin>>X>>Y;
-        cout<<LCSubStr(X, Y, m, n)<<endl;
-    }
-    return 0;
-} 
+};

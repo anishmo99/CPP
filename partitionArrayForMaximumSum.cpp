@@ -5,7 +5,7 @@ public:
         
         int i = 0, j = 1;
         
-        int m1axc = arr[0];
+        int maxc = arr[0];
         while(j <= k){
             maxc = max(maxc, arr[j++]);
         }

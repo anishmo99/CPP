@@ -1,127 +1,157 @@
 // TRIE
 
-class Solution
+class TrieNode
 {
 public:
-    static bool comp(string a, string b)
+    TrieNode *link[26];
+    bool is_end;
+    TrieNode()
     {
-        return a.size() < b.size();
-    }
-
-    struct Node
-    {
-        Node() : wordEnd(), next(){};
-        bool wordEnd;
-        Node *next[26];
-    };
-
-    vector<string> findAllConcatenatedWordsInADict(vector<string> &words)
-    {
-        vector<string> res;
-
-        sort(words.begin(), words.end(), comp);
-
-        Node *root = new Node();
-
-        for (string word : words)
+        for (int i = 0; i < 26; i++)
         {
-            if (canbreak(0, word, root))
-                res.push_back(word);
-
-            addword(word, root);
+            link[i] = NULL;
         }
-
-        return res;
+        is_end = false;
     }
-
-    bool canbreak(int index, string word, Node *root)
+    static TrieNode *insert(TrieNode *root, string str)
     {
-        if (index == word.size())
-            return true;
-
-        string s;
-
-        for (int i = index; i < word.size(); i++)
+        if (root == NULL)
         {
-            if (search(s += word[i], root) and canbreak(i + 1, word, root))
-                return true;
+            root = new TrieNode;
         }
-
-        return false;
+        TrieNode *temp = root;
+        int i = 0;
+        while (i < str.size())
+        {
+            if (temp->link[str[i] - 'a'] == NULL)
+            {
+                temp->link[str[i] - 'a'] = new TrieNode;
+            }
+            temp = temp->link[str[i] - 'a'];
+            i++;
+        }
+        temp->is_end = true;
+        return root;
     }
-
-    void addword(string word, Node *root)
+    static void mark(TrieNode *root, string str, vector<bool> &dp, int l, int r)
     {
-        for (char c : word)
+        if (root == NULL)
         {
-            if (!root->next[c - 'a'])
-                root->next[c - 'a'] = new Node();
-
-            root = root->next[c - 'a'];
+            return;
         }
-
-        root->wordEnd = true;
-    }
-
-    bool search(string word, Node *root)
-    {
-        for (char c : word)
+        if (root->is_end)
         {
-            if (!root->next[c - 'a'])
-                return false;
-
-            root = root->next[c - 'a'];
+            dp[l] = true;
         }
-
-        return root->wordEnd;
+        if (l == r)
+        {
+            return;
+        }
+        if (root->link[str[l] - 'a'] != NULL)
+        {
+            mark(root->link[str[l] - 'a'], str, dp, l + 1, r);
+        }
     }
 };
 
-// unordered_sets TLE
+class Solution
+{
+public:
+    // sort on the basis of string length
+    static bool sorter(string a, string b)
+    {
+        return a.size() < b.size();
+    }
+    vector<string> findAllConcatenatedWordsInADict(vector<string> &words)
+    {
+        vector<string> ans;
+        sort(words.begin(), words.end(), sorter);
+        TrieNode *root = NULL;
+        vector<bool> singles(26, false); // this is for the hack
+
+        for (int i = 0; i < words.size(); i++)
+        {
+            if (words[i] == "")
+            {
+                continue;
+            }
+            if (words[i].size() == 1)
+            {
+                // this can never be the answer, but is a good building block
+                singles[words[i][0] - 'a'] = true;
+                root = TrieNode::insert(root, words[i]);
+                continue;
+            }
+            // check if the current string can be made using our single building blocks
+            bool check = true;
+            for (int j = 0; j < words[i].size(); j++)
+            {
+                if (!singles[words[i][j] - 'a'])
+                {
+                    check = false;
+                    break;
+                }
+            }
+            if (check)
+            {
+                ans.push_back(words[i]);
+                continue;
+            }
+
+            // our vanilla trie with dp solution
+            vector<bool> dp(words[i].size() + 1, false);
+            dp[0] = true;
+            TrieNode::mark(root, words[i], dp, 0, words[i].size());
+            for (int j = 1; j < words[i].size(); j++)
+            {
+                if (dp[j])
+                {
+                    TrieNode::mark(root, words[i], dp, j, words[i].size());
+                }
+            }
+            if (dp[words[i].size()])
+            {
+                ans.push_back(words[i]);
+            }
+            else
+            {
+                root = TrieNode::insert(root, words[i]);
+            }
+        }
+        return ans;
+    }
+};
+
+// unordered_sets
 
 class Solution
 {
 public:
-    static bool comp(string &a, string &b)
-    {
-        return a.size() < b.size();
-    }
-
     vector<string> findAllConcatenatedWordsInADict(vector<string> &words)
     {
-        unordered_set<string> set;
-
-        vector<string> ans;
-
-        sort(words.begin(), words.end(), comp);
-
-        for (string word : words)
+        unordered_set<string> s(words.begin(), words.end());
+        vector<string> res;
+        for (auto w : words)
         {
-            if (word.empty())
-                continue;
-
-            if (canbreak(0, word, set))
-                ans.push_back(word);
-
-            set.insert(word);
+            int n = w.size();
+            vector<int> dp(n + 1);
+            dp[0] = 1;
+            for (int i = 0; i < n; i++)
+            {
+                if (dp[i] == 0)
+                    continue;
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (j - i < n && s.count(w.substr(i, j - i)))
+                        dp[j] = 1;
+                }
+                if (dp[n])
+                {
+                    res.push_back(w);
+                    break;
+                }
+            }
         }
-
-        return ans;
-    }
-
-    bool canbreak(int index, string &word, unordered_set<string> &set)
-    {
-        if (index == word.size())
-            return true;
-
-        string s;
-
-        for (int i = index; i < word.size(); i++)
-        {
-            if (set.count(s += word[i]) > 0 and canbreak(i + 1, word, set))
-                return true;
-        }
-
-        return false;
+        return res;
     }
 };

@@ -28,3 +28,41 @@ public:
         return result;
     }
 };
+
+// better
+
+class Solution
+{
+public:
+    void generateCombinations(int i, int k, vector<int> &a, vector<int> &tmp, vector<vector<int>> &res)
+    {
+        if (i == a.size())
+        {
+            tmp.pop_back();
+            return;
+        }
+        if (k < 0)
+        {
+            tmp.pop_back();
+            return;
+        }
+        if (k == 0)
+        {
+            res.push_back(tmp);
+            tmp.pop_back();
+        }
+        else
+        {
+            tmp.push_back(a[i]);
+            generateCombinations(i, k - a[i], a, tmp, res);
+            generateCombinations(i + 1, k, a, tmp, res);
+        }
+    }
+    vector<vector<int>> combinationSum(vector<int> &s, int k)
+    {
+        vector<int> tmp;
+        vector<vector<int>> res;
+        generateCombinations(0, k, s, tmp, res);
+        return res;
+    }
+};
