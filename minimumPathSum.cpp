@@ -35,8 +35,7 @@ public:
         if(dp[m][n] != -1)
             return dp[m][n];
         
-        return dp[m][n] = grid[m][n] + min(solve(grid, m - 1, n), solve(grid, m, n - 1));
-        
+        return dp[m][n] = grid[m][n] + min(solve(grid, m - 1, n), solve(grid, m, n - 1));      
     }
     int minPathSum(vector<vector<int>>& grid) {
         dp.resize(grid.size(), vector<int> (grid[0].size(), -1));
