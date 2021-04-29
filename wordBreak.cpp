@@ -1,4 +1,61 @@
 // accepted leetcode
+// MCM dp
+
+class Solution {
+public:
+    vector<string> dict;
+    vector<vector<int>> dp;
+    
+    bool solve(string& s, int i, int j){
+        if(i > j)
+            return dp[i][j] = false;
+        
+        if(dp[i][j] != -1)
+            return dp[i][j];
+        
+        for(string& x : dict)
+            if(s.substr(i, j - i + 1) == x)
+                return dp[i][j] = true;
+        
+        for(int k = i; k <= j - 1; k++){
+            if(solve(s, i, k) and solve(s, k + 1, j))
+                return dp[i][j] = true;
+        }
+        
+        return dp[i][j] = false;
+    }
+    
+    bool wordBreak(string s, vector<string>& wordDict) {
+        dict = wordDict;
+        int n = s.size();
+        dp.clear();
+        dp.resize(n + 1, vector<int> (n + 1, -1));
+        return solve(s, 0, n - 1);
+    }
+};
+
+// dp
+// OJ: https://leetcode.com/problems/word-break/
+// Author: github.com/lzl124631x
+// Time: O(S^3)
+// Space: O(S + W)
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& dict) {
+        unordered_set<string> st(begin(dict), end(dict));
+        int N = s.size();
+        vector<bool> dp(N + 1);
+        dp[0] = true;
+        for (int i = 1; i <= N; ++i) {
+            for (int j = 0; j < i && !dp[i]; ++j) {
+                dp[i] = dp[j] && st.count(s.substr(j, i - j));
+            }
+        }
+        return dp[N];
+    }
+};
+
+// or
 
 class Solution
 {
