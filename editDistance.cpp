@@ -25,3 +25,31 @@ public:
         return dp[m][n];
     }
 };
+
+// memoization
+
+class Solution {
+public:
+    vector<vector<int>> dp;
+    int solve(string& a, string& b, int m, int n){
+        if(m <= 0)
+            return dp[m][n] = n;
+        
+        if(n <= 0)
+            return dp[m][n] = m;
+        
+        if(dp[m][n] != -1)
+            return dp[m][n];
+        
+        if(a[m - 1] == b[n - 1])
+            return dp[m][n] = solve(a, b, m - 1, n - 1);
+        
+        return dp[m][n] = 1 + min(solve(a, b, m - 1, n - 1), min(solve(a, b, m - 1, n), solve(a, b, m, n -1)));
+    }
+    
+    int minDistance(string word1, string word2) {
+        dp.assign(word1.size() + 1, vector<int> (word2.size() + 1, -1));
+        
+        return solve(word1, word2, word1.size(), word2.size());
+    }
+};

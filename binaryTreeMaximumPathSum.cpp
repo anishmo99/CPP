@@ -1,16 +1,55 @@
 class Solution {
 private:
-    int dfs(TreeNode* root, int& maxsum) {
+    int solve(TreeNode* root, int& maxsum) {
         if(!root) return 0;
-        int l = max(0,dfs(root->left,maxsum));
-        int r = max(0,dfs(root->right,maxsum));
-        maxsum = max(l+r+root->val, maxsum);
-        return root->val + max(l,r);
+        
+        int l = solve(root->left, maxsum);
+        int r = solve(root->right, maxsum);
+        
+        int temp = max(0, root -> val + max(l, r));
+        
+        int ans = root -> val + l + r;
+        
+        maxsum = max(maxsum, ans);
+        
+        return temp;
     }
 public:
     int maxPathSum(TreeNode* root) {
         int maxsum = INT_MIN;
-        dfs(root,maxsum);
+        
+        solve(root, maxsum);
+        
         return maxsum;
     }
 };
+
+
+// or
+
+class Solution {
+private:
+    int solve(TreeNode* root, int& maxsum) {
+        if(!root) return 0;
+        
+        int l = solve(root->left, maxsum);
+        int r = solve(root->right, maxsum);
+        
+        int temp = max(root -> val, root -> val + max(l, r));
+        
+        int ans = max(temp, root -> val + l + r);
+        
+        maxsum = max(maxsum, ans);
+        
+        return temp;
+    }
+public:
+    int maxPathSum(TreeNode* root) {
+        int maxsum = INT_MIN;
+        
+        solve(root, maxsum);
+        
+        return maxsum;
+    }
+};
+

@@ -12,22 +12,28 @@
 
 class Solution {
 public:
-    int depth;
+    int res;
     
     int diameterOfBinaryTree(TreeNode* root) {
-        depth = 0;
+        res = 0;
         
         rec(root);
         
-        return depth;
+        return res;
     }
     
     int rec(TreeNode* root){
          if(root == nullptr)
             return 0;
+
         int l = rec(root->left);
         int r = rec(root->right);
-        depth = max(depth, l + r);
-        return max(l,r) + 1;
+        
+        int temp = max(l, r) + 1;
+        int ans = l + r;
+        
+        res = max(res, ans);
+        
+        return temp;
     }
 };

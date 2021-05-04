@@ -1,28 +1,32 @@
-//Node is as follows
-struct Node{
-    int data;
-    Node *left, *right;
-};
+int ans;
 
-int dfs(Node *root,int &ans)
+int fun(Node* root)
 {
-    if(!root)
-        return INT_MIN;
+    if(root==NULL)
+    return 0;
     
-    if(!root->left&&!root->right)
-        return root->data;
-        
-    int left_data=dfs(root->left,ans);
-    int right_data=dfs(root->right,ans);
+    if(root->left==NULL and root->right==NULL)
+    return root->data;
     
-    if(root->left&&root->right)
-        ans=max(left_data+right_data+root->data,ans);
+    int left = fun(root->left);
+    int right = fun(root->right);
     
-    return max(left_data,right_data)+root->data;
+    if(root->left and root->right)
+    {
+        ans = max(ans,left+right+root->data);
+        return max(left,right) + root->data;
+    }
+    
+    if(root->left==NULL)
+    return right + root->data;
+    else
+    return left + root->data;
 }
 
-int maxPathSum(Node *root) {
-    int ans=INT_MIN;
-    dfs(root,ans);
+int maxPathSum(Node* root)
+{
+    ans = INT_MIN;
+    fun(root);
+    
     return ans;
 }
